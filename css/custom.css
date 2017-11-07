@@ -270,6 +270,18 @@ to {
 	margin: 0 0 20px 0;
 }
 
+#drones {
+	position: absolute;
+	width: 100%;
+}
+
+#drones > img {
+	width: 20%;
+	border: none;
+	/*background-color: transparent;*/
+	margin: auto;
+	vertical-align: middle;
+}
 /*
 .container ul {
 	margin: 0;
