@@ -1,1 +1,195 @@
-Hello World
+<!doctype html>
+<html lang="pt-BR" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Os VANTs e a Comunicação Wireless</title>
+		<meta lang="pt_BR" />
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement('link');
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild(link);
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-video="media/video.webm,media/video.mp4" data-background-video-loop data-background-video-muted data-background-size="cover" id="capa">
+					<!-- <video playsinline autoplay muted loop id="bgvid">
+					<source src="video.webm" type="video/webm">
+					<source src="video.mp4" type="video/mp4">
+					</video> -->
+					<h1>Os <span>VANTs</span> e a</h1>
+					<h1>Comunicação Sem Fio</h1>
+					<h4>Rayner M. Pires</h4>
+					<small>10 de novembro de 2017</small>
+					<!--
+					<video playsinline autoplay muted loop id="bgvid">
+					<source src="video.webm" type="video/webm">
+					<source src="video.mp4" type="video/mp4">
+					</video>
+					-->
+				</section>
+				<section>
+					<section>
+						<h1>Quem sou eu?</h1>
+						<div id="timeline">
+							<div id="myself"><img src="media/me.jpg"></div>
+							<ul class="fragment">
+								<li class="fragment fade-up">
+									<div>
+										<div class="texto">
+											Bacharel em Ciências da Computação pela UFG
+										</div>
+										<span class="ano">2010</span>
+									</div>
+								</li>
+								<li class="fragment fade-up">
+									<div>
+										<div class="texto">
+											Mestre em Ciências da Computação pelo ICMC/USP
+										</div>
+										<span class="ano">2014</span>
+									</div>
+								</li>
+								<li class="fragment fade-down">
+									<div>
+										<div class="texto">
+											Doutorando em Ciências da Computação pelo ICMC/USP
+										</div>
+										<span class="ano">2014</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h1>Sobre o que é esta palestra?</h1>
+						<ul>
+							<li class="fragment">
+								Introdução sobre Sistemas com VANTs
+							</li>
+							<!-- <span style="color: #f24738; -webkit-text-fill-color: #f24738; font-weight: bold;">VANTs</span>! -->
+							<li class="fragment">
+								Cenário de comunicação
+							</li>
+							<li class="fragment">
+								Aplicações
+							</li>
+							<li class="fragment">
+								Telemetria
+							</li>
+							<li class="fragment">
+								Pesquisa
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section id="vants1" data-background-color="#023852">
+						<h1>O que são VANTs?</h1>
+						<table>
+							<tr>
+								<td>V</td><td>eículos</td>
+							</tr>
+							<tr>
+								<td>A</td><td>éreos</td>
+							</tr>
+							<tr>
+								<td>N</td><td>ão</td>
+							</tr>
+							<tr>
+								<td>T</td><td>ripulados</td>
+							</tr>
+						</table>
+					</section>
+					<section id="vants2">
+						<table>
+							<tr style="vertical-align: bottom;">
+								<td>
+									<img src="media/ScanEagle.png" />
+								</td>
+								<td>
+									<img src="media/Aerosonde.png" />
+								</td>
+								<td>
+									<img src="media/SkySeer.png" />
+								</td>
+								<td>
+									<img src="media/FireScout.png" />
+								</td>
+							</tr>
+							<tr style="vertical-align: top;">
+								<td>
+									<img src="media/arara.png" />
+								</td>
+								<td>
+									<img src="media/sarvant.png" />
+								</td>
+								<td>
+									<img src="media/AGXTiribaFoto2.png" />
+								</td>
+								<td>
+									<img src="media/PredatorB.png" />
+								</td>
+							</tr>
+						</table>
+						<ul>
+							<li>São aeronaves não tripuladas, <span class="highlight1">autônomas</span> ou <span class="highlight1">remotamente pilotadas</span>&nbsp;(RPAs)</li>
+							<li>Divergem em tamanho, modo de voo, modo de propulsão, aplicações, capacidades e preço</li>
+						</ul>
+					</section>
+					<section id="vants3">
+						
+					</section>
+				</section>
+				<section>
+					<h1>Obrigado!</h1>
+					<h3>Rayner M. Pires / raynermp@gmail.com</h3>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				controls : true,
+				progress : true,
+				history : true,
+				slideNumber : true,
+				transition: 'none', 		    // none/fade/slide/convex/concave/zoom
+				dependencies : [{
+					src : 'plugin/markdown/marked.js'
+				}, {
+					src : 'plugin/markdown/markdown.js'
+				}, {
+					src : 'plugin/notes/notes.js',
+					async : true
+				}, {
+					src : 'plugin/highlight/highlight.js',
+					async : true,
+					callback : function() {
+						hljs.initHighlightingOnLoad();
+					}
+				}]
+			});
+		</script>
+	</body>
+</html>
