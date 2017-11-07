@@ -262,6 +262,14 @@ to {
 	-webkit-text-stroke-color: white;*/
 }
 
+#email {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	position: relative;
+	margin: 0 0 20px 0;
+}
+
 /*
 .container ul {
 	margin: 0;
