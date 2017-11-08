@@ -1,6 +1,11 @@
 /* Color theme: Adobe rg4 -> https://color.adobe.com/rga4-color-theme-10086676/
  *
  *  */
+
+.reveal table tr, .reveal table td {
+	border-style: none;
+}
+
 video {
 	-webkit-animation: videofadeout 3s 3s linear backwards;
 	animation: videofadeout 3s 3s linear backwards;
@@ -209,8 +214,6 @@ to {
 	margin-left: 20px;
 }
 
-#vants1 > table > tbody > tr {
-}
 #vants1 > table > tbody > tr > td {
 	border: none;
 	padding: 0;
@@ -254,12 +257,31 @@ to {
 	vertical-align: top;
 }
 
-.highlight1 {
+#highlight1, #highlight2 {
 	font-weight: bold;
 	color: #F24738;
 	text-shadow: -1px -1px pink, 1px 1px pink;
 	/*-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: white;*/
+}
+
+#highlight3, #highlight4 {
+	font-weight: bold;
+	color: coral;
+	-webkit-text-stroke-width: 1px;
+	/*-webkit-text-stroke-color: white;*/
+}
+
+#highlight5 {
+	font-weight: bold;
+	color: #03A694;
+	-webkit-text-stroke-width: 1px;
+}
+
+#fanet > table > tbody > tr > td > img {
+	background: transparent;
+    border: none;
+    box-shadow: none;
 }
 
 #email {
@@ -270,94 +292,38 @@ to {
 	margin: 0 0 20px 0;
 }
 
-#drones {
-	position: absolute;
-	width: 100%;
+#drones, #vant, #sant {
+	width: 75%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
-#drones > img {
-	width: 20%;
+#drones table {
+  border-collapse: separate;
+  border-spacing: 0.15em;
+}
+#drones table tr {
+  background-color: white;
+}
+
+#drones table tr td {
+  border-radius: 0.15em;
+  margin: auto;
+  vertical-align: middle;
+}
+
+#drones table tr td img {
+/* 	width: 20%; */
 	border: none;
-	/*background-color: transparent;*/
+	background-color: transparent;
+	box-shadow: none;
 	margin: auto;
 	vertical-align: middle;
+} 
+
+#duvidas > h1 {
+	text-shadow: 8px -5px 18px black;
 }
-/*
-.container ul {
-	margin: 0;
-	margin-top: 100px;
-	list-style: none;
-	position: relative;
-	padding: 1px 100px;
-	color: #fff;
-	font-size: 13px;
-}
-.container ul:before {
-	content: "";
-	width: 1px;
-	height: 100%;
-	position: absolute;
-	border-left: 2px dashed #fff;
-}
-.container ul li {
-	position: relative;
-	margin-left: 30px;
-	background-color: rgba(255, 255, 255, 0.2);
-	padding: 14px;
-	border-radius: 6px;
-	width: 250px;
-	box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
-}
-.container ul li:not(:first-child) {
-	margin-top: 60px;
-}
-.container ul li > span {
-	width: 2px;
-	height: 100%;
-	background: #fff;
-	left: -30px;
-	top: 0;
-	position: absolute;
-}
-.container ul li > span:before, .container ul li > span:after {
-	content: "";
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	border: 2px solid #fff;
-	position: absolute;
-	background: #86b7e7;
-	left: -5px;
-	top: 0;
-}
-.container ul li span:after {
-	top: 100%;
-}
-.container ul li > div {
-	margin-left: 10px;
-}
-.container div .title, .container div .type {
-	font-weight: 600;
-	font-size: 12px;
-}
-.container div .info {
-	font-weight: 300;
-}
-.container div > div {
-	margin-top: 5px;
-}
-.container span.number {
-	height: 100%;
-}
-.container span.number span {
-	position: absolute;
-	font-size: 10px;
-	left: -35px;
-	font-weight: bold;
-}
-.container span.number span:first-child {
-	top: 0;
-}
-.container span.number span:last-child {
-	top: 100%;
-}*/
