@@ -257,6 +257,11 @@ to {
 	vertical-align: top;
 }
 
+#vant > table > tbody > tr > td > img, #sant > table > tbody > tr > td > img {
+	border-radius: 0.15em;
+	border-style: hidden;
+}
+
 #highlight1, #highlight2 {
 	font-weight: bold;
 	color: #F24738;
@@ -269,19 +274,36 @@ to {
 	font-weight: bold;
 	color: coral;
 	-webkit-text-stroke-width: 1px;
-	/*-webkit-text-stroke-color: white;*/
 }
 
 #highlight5 {
 	font-weight: bold;
 	color: #03A694;
-	-webkit-text-stroke-width: 1px;
+	text-shadow: -1px -1px #A0F0C2, 1px 1px #A0F0C2;
+	/*-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #80D4BD; */
 }
 
 #fanet > table > tbody > tr > td > img {
 	background: transparent;
-    border: none;
+    /*border-style: hidden;*/
+    border-radius: 0.15em;
     box-shadow: none;
+}
+
+#monitoramento1 > h1 {
+	padding-top: 0.2em;
+	padding-bottom: 0.1em;
+}
+
+#monitoramento2 > h1 {
+	padding-top: 0.3em;
+	padding-bottom: 0em;
+}
+
+#auditoria1 > h1 {
+	padding-top: 0.3em;
+	padding-bottom: 0em;
 }
 
 #email {
